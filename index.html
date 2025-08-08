@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1100, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>लेटरल एंट्री एडमिशन 2025-26</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Hind:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #004080;
+      --secondary: #b30000;
+      --accent: #0066cc;
+      --light-bg: #f0f7ff;
+      --dark-bg: #e9f0f5;
+      --card-bg: #ffffff;
+      --text: #222;
+      --text-light: #555;
+      --success: #2e7d32;
+      --warning: #d32f2f;
+      --gold: #ffc107;
+    }
+
+    body {
+      font-family: 'Poppins', 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #d4e3f0, #e9f0f5);
+      color: var(--text);
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* Decorative background elements */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 10% 20%, rgba(0, 64, 128, 0.05) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(179, 0, 0, 0.05) 0%, transparent 20%),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 64, 128, 0.02) 10px, rgba(0, 64, 128, 0.02) 20px);
+      z-index: -1;
+    }
+
+    .poster {
+      width: 1100px;
+      max-width: 1100px;
+      margin: 20px auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(0, 64, 128, 0.15);
+      background-image: linear-gradient(to bottom, rgba(255,255,255,0.95) 0%, rgba(245,248,252,0.95) 100%);
+      transform-origin: top center;
+    }
+
+    .poster::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      z-index: 10;
+    }
+
+    .poster::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 6px;
+      background: linear-gradient(to right, var(--secondary), var(--primary));
+      z-index: 10;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid rgba(0, 64, 128, 0.1);
+      position: relative;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      padding: 10px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border: 2px solid var(--primary);
+      transition: all 0.3s ease;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo.left {
+      margin-right: auto;
+    }
+
+    .logo.right {
+      margin-left: auto;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .header h1 {
+      font-size: 36px;
+      color: var(--primary);
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+      display: inline-block;
+      padding: 0 15px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    .header h1::after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 200px;
+      height: 5px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      border-radius: 3px;
+    }
+
+    .header h2 {
+      font-family: 'Hind', sans-serif;
+      font-size: 24px;
+      color: var(--text-light);
+      font-weight: 500;
+      margin-top: 25px;
+      position: relative;
+      display: inline-block;
+      padding: 5px 20px;
+      background: rgba(0, 64, 128, 0.05);
+      border-radius: 30px;
+    }
+
+    .section-title {
+      font-family: 'Hind', sans-serif;
+      font-size: 32px;
+      text-align: center;
+      margin: 50px 0 30px;
+      color: var(--primary);
+      position: relative;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 5px;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      margin: 15px auto 20px;
+      border-radius: 5px;
+    }
+
+    .badge-container {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--secondary), #8b0000);
+      color: white;
+      font-weight: bold;
+      padding: 12px 24px;
+      border-radius: 30px;
+      font-size: 18px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+      50% {
+        transform: scale(1.1);
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+      }
+      100% {
+        transform: scale(1);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--light-bg);
+      border-left: 6px solid var(--accent);
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 100%);
+      z-index: -1;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    .card strong {
+      color: var(--primary);
+      font-size: 22px;
+      display: block;
+      margin-bottom: 20px;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .card strong::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .important {
+      background: linear-gradient(135deg, #fff3f3, #ffeaea);
+      border-left: 6px solid var(--warning);
+      padding: 30px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+      position: relative;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .important::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 80px;
+      height: 80px;
+      background: var(--warning);
+      border-radius: 50%;
+      opacity: 0.1;
+      z-index: -1;
+    }
+
+    .important strong {
+      color: var(--warning);
+      font-size: 24px;
+    }
+
+    ul {
+      padding-left: 30px;
+      margin-top: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    ul li {
+      margin-bottom: 12px;
+      line-height: 1.7;
+      font-size: 18px;
+      position: relative;
+      padding-left: 10px;
+    }
+
+    ul li::before {
+      content: "•";
+      color: var(--accent);
+      font-weight: bold;
+      display: inline-block; 
+      width: 1em;
+      margin-left: -1em;
+      font-size: 22px;
+    }
+
+    ul ul {
+      padding-left: 25px;
+      margin-top: 10px;
+    }
+
+    ul ul li::before {
+      content: "◦";
+      color: var(--secondary);
+    }
+
+    .highlight {
+      background: linear-gradient(120deg, rgba(0, 102, 204, 0.2) 0%, transparent 100%);
+      padding: 5px 12px;
+      border-radius: 6px;
+      font-weight: 600;
+      display: inline-block;
+      margin: 3px 0;
+    }
+
+    .qr-section {
+      text-align: center;
+      margin-top: 50px;
+      background: linear-gradient(135deg, #f0f7ff, #e1edff);
+      padding: 40px;
+      border-radius: 20px;
+      border: 2px dashed var(--accent);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .qr-section::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: 
+        radial-gradient(circle, rgba(0, 102, 204, 0.08) 0%, transparent 20%),
+        repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(0, 102, 204, 0.05) 10px, rgba(0, 102, 204, 0.05) 20px);
+      z-index: 0;
+    }
+
+    .qr-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .qr-section img {
+      width: 180px;
+      margin-bottom: 20px;
+      border: 10px solid white;
+      border-radius: 15px;
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+      transition: all 0.3s ease;
+    }
+
+    .qr-section img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .qr-section div {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+
+    .qr-section div strong {
+      color: var(--secondary);
+      font-size: 22px;
+    }
+
+    .apply-now-button {
+      display: inline-block;
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      color: white;
+      padding: 12px 30px;
+      border-radius: 30px;
+      margin-top: 15px;
+      font-weight: 700;
+      font-size: 20px;
+      box-shadow: 0 8px 20px rgba(0, 64, 128, 0.4);
+      letter-spacing: 1px;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      animation: highlight 3s infinite ease-in-out;
+    }
+
+    .apply-now-button::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+      );
+      transition: all 0.6s;
+    }
+
+    .apply-now-button:hover::before {
+      left: 100%;
+    }
+
+    .apply-now-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 64, 128, 0.5);
+    }
+
+    @keyframes highlight {
+      0% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+      }
+      50% {
+        background: linear-gradient(to right, var(--secondary), var(--primary));
+      }
+      100% {
+        background: linear-gradient(to right, var(--primary), var(--secondary));
+      }
+    }
+
+    .instruction {
+      font-size: 18px;
+      color: var(--text-light);
+      margin-top: 15px;
+      font-weight: 500;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 16px;
+      color: var(--text-light);
+      margin-top: 50px;
+      padding-top: 25px;
+      border-top: 1px solid rgba(0, 0, 0, 0.1);
+      font-weight: 500;
+    }
+
+    .icon {
+      margin-right: 10px;
+      font-size: 20px;
+      vertical-align: middle;
+      color: var(--accent);
+    }
+
+    .gold-border .icon {
+      font-size: 24px;
+    }
+
+    .gold-border ul li {
+      font-size: 20px;
+    }
+
+    .shine {
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: rgba(255,255,255,0.15);
+      transform: rotate(30deg);
+      pointer-events: none;
+      animation: shine 5s infinite;
+    }
+
+    @keyframes shine {
+      0% { transform: rotate(30deg) translateX(-100%); }
+      20% { transform: rotate(30deg) translateX(100%); }
+      100% { transform: rotate(30deg) translateX(100%); }
+    }
+
+    .gold-border {
+      border: 3px solid var(--gold);
+      border-radius: 20px;
+      padding: 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .gold-border::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+
+    /* Responsive Scaling for Consistent Appearance */
+    @media (max-width: 1100px) {
+      body {
+        padding: 0;
+        overflow-x: auto;
+      }
+
+      .poster {
+        transform: scale(calc(100vw / 1100));
+        transform-origin: top center;
+        margin: calc(20px * (100vw / 1100)) auto;
+        padding: calc(40px * (100vw / 1100));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .poster {
+        width: 1100px;
+        transform: scale(calc(100vw / 1100));
+        transform-origin: top center;
+        margin: calc(20px * (100vw / 1100)) auto;
+        padding: calc(40px * (100vw / 1100));
+      }
+
+      .header h1 {
+        font-size: calc(36px * (100vw / 1100));
+      }
+
+      .header h2 {
+        font-size: calc(24px * (100vw / 1100));
+      }
+
+      .section-title {
+        font-size: calc(32px * (100vw / 1100));
+      }
+
+      .card {
+        padding: calc(30px * (100vw / 1100));
+      }
+
+      .card strong {
+        font-size: calc(22px * (100vw / 1100));
+      }
+
+      .important {
+        padding: calc(30px * (100vw / 1100));
+      }
+
+      .important strong {
+        font-size: calc(24px * (100vw / 1100));
+      }
+
+      .qr-section {
+        padding: calc(40px * (100vw / 1100));
+      }
+
+      .qr-section img {
+        width: calc(180px * (100vw / 1100));
+      }
+
+      .qr-section div {
+        font-size: calc(20px * (100vw / 1100));
+      }
+
+      .qr-section div strong {
+        font-size: calc(22px * (100vw / 1100));
+      }
+
+      .apply-now-button {
+        font-size: calc(20px * (100vw / 1100));
+        padding: calc(12px * (100vw / 1100)) calc(30px * (100vw / 1100));
+      }
+
+      .instruction {
+        font-size: calc(18px * (100vw / 1100));
+      }
+
+      .badge {
+        font-size: calc(18px * (100vw / 1100));
+        padding: calc(12px * (100vw / 1100)) calc(24px * (100vw / 1100));
+      }
+
+      .logo {
+        width: calc(120px * (100vw / 1100));
+        height: calc(120px * (100vw / 1100));
+      }
+
+      .footer {
+        font-size: calc(16px * (100vw / 1100));
+      }
+
+      .gold-border .icon {
+        font-size: calc(24px * (100vw / 1100));
+      }
+
+      .gold-border ul li {
+        font-size: calc(20px * (100vw / 1100));
+      }
+
+      ul li {
+        font-size: calc(18px * (100vw / 1100));
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <div class="shine"></div>
+    
+    <div class="logo-container">
+      <img src="https://i.postimg.cc/jqZ5Cs3W/IMG-20250801-125104-545.jpg" class="logo left" alt="Logo Left">
+      <div class="header">
+        <h1>Government IAS/PCS COACHING CENTRE NIZAMPUR HAPUR</h1>
+        <h2>उत्तर प्रदेश समाज कल्याण विभाग द्वारा संचालित</h2>
+      </div>
+      <img src="https://i.postimg.cc/h4zf2VzJ/images-2.png" class="logo right" alt="Logo Right">
+    </div>
+
+    <div class="section-title">लेटरल एंट्री एडमिशन 2025-26</div>
+    <div class="badge-container">
+      <div class="badge">केवल 17 सीटें शेष महिलाओं हेतु</div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <strong>पात्रता शर्तें:</strong>
+        <ul>
+          <li>छात्रा ने उत्तर प्रदेश समाज कल्याण विभाग द्वारा संचालित 8 आवासीय कोचिंग संस्थानों में अधिकतम दो बार या एक बार प्रवेश प्राप्त किया हो:
+            <ul>
+              <li>दो बार SWD एंट्रेंस परीक्षा के माध्यम से</li>
+              <li>या एक बार SWD एंट्रेंस, लेकिन लेटरल एंट्री से कभी नहीं</li>
+            </ul>
+          </li>
+          <li>छात्रा ने UPSC या UPPCS की प्रीलिम्स परीक्षा (गत वर्ष या वर्तमान वर्ष में) उत्तीर्ण की हो।</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <strong>उपलब्ध सुविधाएं:</strong>
+        <ul>
+          <li><span class="highlight">10 महीने की सम्पूर्ण नि:शुल्क आवासीय कोचिंग</span></li>
+          <li>निशुल्क आवास, भोजन, शिक्षण, 24x7 पुस्तकालय</li>
+          <li>मार्गदर्शन एवं चयनित अभ्यर्थियों से मेंटरिंग</li>
+          <li>विशेषज्ञ शिक्षकों द्वारा व्यक्तिगत मार्गदर्शन</li>
+          <li>नियमित मॉक टेस्ट और प्रदर्शन विश्लेषण</li>
+          <li>गार्ड युक्त सुरक्षात्मक परिसर</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="important">
+      <i class="fas fa-exclamation-triangle icon"></i><strong>अपात्रता:</strong> 
+      <ul>
+        <li>कोई छात्रा जो दो बार SWD एंट्रेंस और एक बार लेटरल एंट्री के माध्यम से प्रवेश ले चुकी है, वह पात्र नहीं होगी।</li>
+        <li>35 वर्ष से अधिक आयु वाली छात्रा पात्र नहीं हैं।</li>
+        <li>पहले से ही दो बार लेटरल एंट्री प्रवेश प्राप्त कर चुकी छात्रा</li>
+      </ul>
+    </div>
+
+    <div class="gold-border">
+      <strong>पंजीकरण विवरण:</strong>
+      <ul>
+        <li><i class="far fa-calendar-alt icon"></i>पंजीकरण तिथि: <span class="highlight">5 अगस्त 2025 से 12 अगस्त 2025 तक</span></li>
+        <li><i class="fas fa-map-marker-alt icon"></i>पता: Vill - Nizampur, Hapur, U.P. - 245101</li>
+        <li><i class="fas fa-phone-alt icon"></i>संपर्क: +91 74176 73385 , +91 72480 90033</li>
+        <li><i class="fas fa-envelope icon"></i>ईमेल: govt.ias.pcs.coaching.hapur@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="qr-section">
+      <div class="qr-container">
+        <img src="https://i.postimg.cc/brB0fP0Q/IMG-20250804-162201-518.jpg" alt="QR Code">
+        <div><strong>SCAN TO APPLY</strong></div>
+        <div>Registration starts from</div>
+        <a href="https://forms.gle/A7m7UtSUxYxwRvSCA" class="apply-now-button">Apply Now</a>
+        <div class="instruction">रजिस्ट्रेशन हेतु ऊपर दिए QR कोड स्कैन करें या Apply Now बटन पर टैप करके अपना रजिस्ट्रेशन करें</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 Government IAS/PCS Coaching Centre, Nizampur Hapur | All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
